@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moja strona z kursu Cotenfrontend!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="nauka-html.html">Nauka HTML5</a>
+        <a href="nauka-css.html">Nauka CSS3</a>
+        <a href="nauka-javascript.html">Nauka JavaScript</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero image -->
+      <header id="home">
+        <div class="layer"></div>
+        <div class="inner hero__image js">
+          <h1>Nauka JavaScript (ECMA Script 2016)</h1>
+        </div>
+      </header>
+
+      <!-- Arcitles -->
+      <section class="wrapper" id="articles">
+        <h2>Notatki ze szkolenia WTF: Co ten frontend!</h2>
+        <article class="border">
+          <strong>Zmienne w JS</strong>
+          <p>// const - zmienne majace stale polaczenie z jedna wartoscia</p>
+          <p>const name = 'Marcin§;</p>
+          <p>const age = 31;</p>
+          <p>
+            // let - zmienne, ktorych polaczenie mozemy przepinac, ale
+            definiujemy tylko raz!
+          </p>
+          <p>let isHappy = false;</p>
+          <p>isHappy = true;</p>
+          <p>isHappy = 'tak';</p>
+          <br />
+          <strong>Typy proste w JS (primitives)</strong>
+          <p>String - tekst, otaczamy '' lub ""</p>
+          <p>Number - liczba</p>
+          <p>Bigint - duza liczba;) tj. wieksza niz 2 do potegi 53</p>
+          <p>boolean - true lub false</p>
+          <p>let isHappy = false;</p>
+          <p>null - wartosc celowo niezdefiniowana</p>
+          <p>
+            undefined - blad, kiedy sie odwolujemy do rzeczy, ktora nie jest
+            zdefiniowana
+          </p>
+          <br />
+          <p>
+            'let' nie przypisuje zadnej konkretnej wartosci a tylko wskazuje
+            polaczenie na wartosc, poniewaz ZMIENNA TO NIE JEST WARTOSC (zmienna
+            to wskazanie wartosci!)
+          </p>
+          <p>
+            immutability - Nie mozemy zmieniac wartosci Primitive Values w JS.
+            To to zmieniamy to PLACZENIA MIEDZY NIMI, A ZMIENNYMI!
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="wrapper">
+      <p>Made by Marcin Bialecki</p>
+    </footer>
+  </body>
+</html>

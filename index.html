@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja strona z kursu Cotenfrontend!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="nauka-html.html">Nauka HTML5</a>
+            <a href="nauka-css.html">Nauka CSS3</a>
+            <a href="nauka-javascript.html">Nauka JavaScript</a>
+        </nav>
+    </header>
+
+    <main>
+    <!-- Hero image -->
+    <header id="home">
+        <div class="layer"></div>
+        <div class="inner hero__image index">
+            <h1>Marcin Bialecki - Strona domowa</h1>
+        </div>
+    </header>
+
+    <!-- Arcitles -->
+    <section class="wrapper" id="articles">
+        <h2>Notatki ze szkolenia WTF: Co ten frontend!</h2>
+        <article class="border">
+            <h3>Tydzien 2.</h3>
+            <p><b>Warstwy strony internetowej</b></p>
+            <p>Strony internetowe, podobnie jak cebula, czy ogry, maja warstwy. Czym sa te warstwy?</p>
+            <ul>
+                <li>Warstwa 0 - Tresc</li>
+                <li>Warstwa 1 - HTML</li>
+                <li>Warstwa 2 - CSS</li>
+                <li>Warstwa 3 - JS</li>
+            </ul>
+            <b>Warstwa 0 - Tresc</b>
+            <p>Warstwa 0 a wiec tresc to jest najwazniejszy element strony internetowej, ktory jest opakowany pozostalymi warstwami.</p>
+            <b>Warstwa 1 - HTML</b>
+            <p>Jest to warstwa, ktora opisuje warstwe tresci, jest to warstwa semantyczna, a wiec HTML. Warstwa ta nadaje sens tresci, a wiec opakowuje ja w znaczniki, ktore nadaja znaczenie tresci - jest to tzw. semantycznosc.</p>
+            <b>Warstwa 2 - CSS</b>
+            <p>To warstwa prezentacji - nadaje wyglad i styl powyzszym warstwom</p>
+            <b>Warstwa 3 - JS</b>
+            <p>Warstwa interakcji, a wiec JS, jest najtrudniejszym elementem frontendu.</p>
+            <br><p><b>Wazne:</b> wyzsze warstwy wplywaja na warstwy nizsze. Np. CSS wplywa na zarowno HTML jak i tresc. JS wplywa na wszystkie elementy umieszczone nizej.</p>
+        </article>
+
+        <article class="border">
+            <h3>Tydzien 3.</h3>
+            <p><b>Planowanie pracy - Kanban</b></p>
+            <p>Składa się z 3 kolumn:</p>
+            <ul>
+                <li>TODO</li>
+                <li>DOING</li>
+                <li>DONE</li>
+            </ul>
+            <p>Zalety Kanban:</p>
+            <ul>
+                <li>Ułatwia śledzenie postępu prac i nauki</li>
+                <li>Zalecane trzymanie jednego zadania w DOING</li>
+                <li>Dobrze opisuj Definition of Done</li>
+                <li>Moźna stosować offline</li>
+               <li>Za darmo online: trello.com</li>
+            </ul><br>
+            <p><b>HTML II</b></p>
+            <ul>
+                <li>tag <strong></strong> podkreśla wysoką istosność i powaność frazy w nim zawartej</li>
+                <li>tag <em></em> podkreśla, e tekst moze mieć inne znaczenie np. ironia</li>
+                <li>a - łącza wew./linki zewnętrzne</li>
+                <li>znacznik nav uywany jest do budowania nawigacji</li>
+                <li>znacznik img słuy do dodawania zdjęć</li>
+            </ul><br>
+            <p><b>Podsumowanie HTML:</b></p>
+            <ul>
+                <li>atrybuty sa niewidzialne / chowamy je w znaczniku</li>
+                <li>nadaja elementom dodatkowe wlasciwosci jak href czy src</li>
+                <li>pozwalaja na grupowanie elementow / class</li>
+                <li>pozwalaja na identyfikowanie elementow / ID</li>
+                <li>mozna je miksowac</li>
+                <li>spos atrybutow globalnych: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">Spis atrybutow globalnych</a></li>
+            </ul><br>
+            <p><b>Metody zapisu klas/nazewnictwa</b></p>
+            <ul>
+                <li>camelCase</li>
+                <li>kebab-case</li>
+                <li>snake_case</li>
+                <li>PascalCase</li>
+            </ul><br>
+            <p><b>CSS II</b></p>
+            <ul>
+                <li>tag <strong></strong> podkreśla wysoką istosność i powaność frazy w nim zawartej</li>
+                <li>tag <em></em> podkreśla, e tekst moze mieć inne znaczenie np. ironia</li>
+                <li>a - łącza wew./linki zewnętrzne</li>
+                <li>znacznik nav uywany jest do budowania nawigacji</li>
+                <li>znacznik img słuy do dodawania zdjęć</li>
+            </ul><br>
+            <p><b>JavaSCript - wprowadzenie</b></p>
+            <p>ES6 = ECMASCript 2015 - ustandaryzowany przez orgnizacje ECMA skryptowy jezyk programowania. JS jak kazdy jezyk programowania ma swoja skladnie. Skladowe jezyka JS:</p>
+            <ul>
+                <li>Wartosci - Wartosci dla JS sa tym co liczby dla matematyki.</li>
+                                <li>Operacje porownywania</li>
+                                <li>Literaly (literals)</li>
+                                <li>Zmienne</li>
+                                <li>Funkcje - skladaja sie z nazwy funkcji, nawiasow okraglych, oraz parametrow.</li>
+                                <li>Obiekty</li>
+                            </ul>
+                            <p>Skrypty dodajemy do strony na dwa sposoby:</p>
+                            <ul>
+                                <li>bezposrednie pisanie skryptow w znaczniku 'script'</li>
+                                <li>zalaczenie zewnetrznego pliku ze skryptami</li>
+                            </ul>
+                        </article>
+                        
+        </section>
+        
+        </main>
+
+    <footer class="wrapper">
+        <p>Made by Marcin Bialecki</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
