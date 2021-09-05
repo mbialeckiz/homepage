@@ -10,7 +10,7 @@ if (person == null || person == "") {
   alert(`I wish you a good day, ${person}.`);
 }
 
-age = 31;
+age = 32;
 
 function calculate(myNumber) {
   console.log(`Dostalam ${myNumber}`);
