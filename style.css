@@ -101,3 +101,8 @@ article h3 {
   top: 0;
   right: 0;
 }
+
+.main {
+  max-width: 1000px;
+  text-align: center;
+}
