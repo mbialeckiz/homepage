@@ -1,130 +1,436 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moja strona z kursu Cotenfrontend!</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav class="navigation">
-            <a class="navigation-link" href="index.html">Strona główna</a>
-            <a class="navigation-link" href="nauka-html.html">Nauka HTML5</a>
-            <a class="navigation-link" href="nauka-css.html">Nauka CSS3</a>
-            <a class="navigation-link" href="nauka-javascript.html">Nauka JavaScript</a>
-        </nav>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <button class="hamburger hamburger--js" aria-label="Otworz menu">MENU</button>
+      <nav class="navigation navigation--js">
+        <a class="navigation-link" href="index.html">Strona główna</a>
+        <a class="navigation-link" href="nauka-html.html">Nauka HTML5</a>
+        <a class="navigation-link" href="nauka-css.html">Nauka CSS3</a>
+        <a class="navigation-link" href="nauka-javascript.html"
+          >Nauka JavaScript</a>
+        <a class="navigation-link" href="form-playgtound.html"
+          >Form Playground</a>
+      </nav>
     </header>
 
-    <main>
-    <!-- Hero image -->
-    <header id="home">
-        <div class="layer"></div>
-        <div class="inner hero__image index">
-            <h1>Marcin Bialecki - Strona domowa</h1>
-        </div>
-    </header>
-
-    <!-- Arcitles -->
-    <section class="wrapper" id="articles">
-        <h2 class="notes__title">Notatki ze szkolenia WTF: Co ten frontend!</h2>
-        <article class="article border">
+    <main class="main">
+        <!-- Hero image -->
+        <header class="header__main grid__item" id="home">
+          <div class="inner hero__image index">
+            <h1 class="main__heading main-heading--js">
+              Marcin Bialecki - Strona domowa
+            </h1>
+            <span class="main__heading--span">Notatki ze szkolenia WTF: Co ten frontend!</span>
+            <div>
+              <button class="action--js">Zmien tresc naglowka!</button>
+            </div>
+          </div>
+        </header>
+        <section class="articles grid__item">
+          <!-- Arcitles -->
+          <article class="article grid__item">
             <h3 class="article__title">Tydzien 2.</h3>
             <p class="article__text"><b>Warstwy strony internetowej</b></p>
-            <p class="article__text">Strony internetowe, podobnie jak cebula, czy ogry, maja warstwy. Czym sa te warstwy?</p>
+            <p class="article__text">
+              Strony internetowe, podobnie jak cebula, czy ogry, maja warstwy.
+              Czym sa te warstwy?
+            </p>
             <ul class="article__list">
-                <li class="article__list-element">Warstwa 0 - Tresc</li>
-                <li class="article__list-element">Warstwa 1 - HTML</li>
-                <li class="article__list-element">Warstwa 2 - CSS</li>
-                <li class="article__list-element">Warstwa 3 - JS</li>
+              <li class="article__list-element">Warstwa 0 - Tresc</li>
+              <li class="article__list-element">Warstwa 1 - HTML</li>
+              <li class="article__list-element">Warstwa 2 - CSS</li>
+              <li class="article__list-element">Warstwa 3 - JS</li>
             </ul>
             <b class="article__text">Warstwa 0 - Tresc</b>
-            <p class="article__text">Warstwa 0 a wiec tresc to jest najwazniejszy element strony internetowej, ktory jest opakowany pozostalymi warstwami.</p>
+            <p class="article__text">
+              Warstwa 0 a wiec tresc to jest najwazniejszy element strony
+              internetowej, ktory jest opakowany pozostalymi warstwami.
+            </p>
             <b class="article__text">Warstwa 1 - HTML</b>
-            <p class="article__text">Jest to warstwa, ktora opisuje warstwe tresci, jest to warstwa semantyczna, a wiec HTML. Warstwa ta nadaje sens tresci, a wiec opakowuje ja w znaczniki, ktore nadaja znaczenie tresci - jest to tzw. semantycznosc.</p>
+            <p class="article__text">
+              Jest to warstwa, ktora opisuje warstwe tresci, jest to warstwa
+              semantyczna, a wiec HTML. Warstwa ta nadaje sens tresci, a wiec
+              opakowuje ja w znaczniki, ktore nadaja znaczenie tresci - jest to
+              tzw. semantycznosc.
+            </p>
             <b class="article__text">Warstwa 2 - CSS</b>
-            <p class="article__text">To warstwa prezentacji - nadaje wyglad i styl powyzszym warstwom</p>
+            <p class="article__text">
+              To warstwa prezentacji - nadaje wyglad i styl powyzszym warstwom
+            </p>
             <b class="article__text">Warstwa 3 - JS</b>
-            <p class="article__text">Warstwa interakcji, a wiec JS, jest najtrudniejszym elementem frontendu.</p>
-            <br>
-            <p class="article__text"><b>Wazne:</b> wyzsze warstwy wplywaja na warstwy nizsze. Np. CSS wplywa na zarowno HTML jak i tresc. JS wplywa na wszystkie elementy umieszczone nizej.</p>
-        </article>
+            <p class="article__text">
+              Warstwa interakcji, a wiec JS, jest najtrudniejszym elementem
+              frontendu.
+            </p>
+            <br />
+            <p class="article__text">
+              <b>Wazne:</b> wyzsze warstwy wplywaja na warstwy nizsze. Np. CSS
+              wplywa na zarowno HTML jak i tresc. JS wplywa na wszystkie elementy
+              umieszczone nizej.
+            </p>
+          </article>
 
-        <article class="article border">
+          <article class="article grid__item">
             <h3 class="article__title">Tydzien 3.</h3>
             <p class="article__text"><b>Planowanie pracy - Kanban</b></p>
             <p class="article__text">Składa się z 3 kolumn:</p>
             <ul class="article__list">
-                <li class="article__list-element">TODO</li>
-                <li class="article__list-element">DOING</li>
-                <li class="article__list-element">DONE</li>
+              <li class="article__list-element">TODO</li>
+              <li class="article__list-element">DOING</li>
+              <li class="article__list-element">DONE</li>
             </ul>
             <p class="article__text">Zalety Kanban:</p>
             <ul class="article__list">
-                <li class="article__list-element">Ułatwia śledzenie postępu prac i nauki</li>
-                <li class="article__list-element">Zalecane trzymanie jednego zadania w DOING</li>
-                <li class="article__list-element">Dobrze opisuj Definition of Done</li>
-                <li class="article__list-element">Moźna stosować offline</li>
-                <li class="article__list-element">Za darmo online: trello.com</li>
-            </ul><br>
+              <li class="article__list-element">
+                Ułatwia śledzenie postępu prac i nauki
+              </li>
+              <li class="article__list-element">
+                Zalecane trzymanie jednego zadania w DOING
+              </li>
+              <li class="article__list-element">
+                Dobrze opisuj Definition of Done
+              </li>
+              <li class="article__list-element">Moźna stosować offline</li>
+              <li class="article__list-element">Za darmo online: trello.com</li>
+            </ul>
+            <br />
             <p class="article__text"><b>HTML II</b></p>
             <ul class="article__list">
-                <li class="article__list-element">tag <strong></strong> podkreśla wysoką istosność i powaność frazy w nim zawartej</li>
-                <li class="article__list-element">tag <em></em> podkreśla, e tekst moze mieć inne znaczenie np. ironia</li>
-                <li class="article__list-element">a - łącza wew./linki zewnętrzne</li>
-                <li class="article__list-element">znacznik nav uywany jest do budowania nawigacji</li>
-                <li class="article__list-element">znacznik img słuy do dodawania zdjęć</li>
-            </ul><br>
+              <li class="article__list-element">
+                tag <strong></strong> podkreśla wysoką istosność i powaność frazy
+                w nim zawartej
+              </li>
+              <li class="article__list-element">
+                tag <em></em> podkreśla, e tekst moze mieć inne znaczenie np.
+                ironia
+              </li>
+              <li class="article__list-element">
+                a - łącza wew./linki zewnętrzne
+              </li>
+              <li class="article__list-element">
+                znacznik nav uywany jest do budowania nawigacji
+              </li>
+              <li class="article__list-element">
+                znacznik img słuy do dodawania zdjęć
+              </li>
+            </ul>
+            <br />
             <p class="article__text"><b>Podsumowanie HTML:</b></p>
             <ul class="article__list">
-                <li class="article__list-element">atrybuty sa niewidzialne / chowamy je w znaczniku</li>
-                <li class="article__list-element">nadaja elementom dodatkowe wlasciwosci jak href czy src</li>
-                <li class="article__list-element">pozwalaja na grupowanie elementow / class</li>
-                <li class="article__list-element">pozwalaja na identyfikowanie elementow / ID</li>
-                <li class="article__list-element">mozna je miksowac</li>
-                <li class="article__list-element">spos atrybutow globalnych: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">Spis atrybutow globalnych</a></li>
-            </ul><br>
+              <li class="article__list-element">
+                atrybuty sa niewidzialne / chowamy je w znaczniku
+              </li>
+              <li class="article__list-element">
+                nadaja elementom dodatkowe wlasciwosci jak href czy src
+              </li>
+              <li class="article__list-element">
+                pozwalaja na grupowanie elementow / class
+              </li>
+              <li class="article__list-element">
+                pozwalaja na identyfikowanie elementow / ID
+              </li>
+              <li class="article__list-element">mozna je miksowac</li>
+              <li class="article__list-element">
+                spos atrybutow globalnych:
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
+                  >Spis atrybutow globalnych</a
+                >
+              </li>
+            </ul>
+            <br />
             <p class="article__text"><b>Metody zapisu klas/nazewnictwa</b></p>
             <ul class="article__list">
-                <li class="article__list-element">camelCase</li>
-                <li class="article__list-element">kebab-case</li>
-                <li class="article__list-element">snake_case</li>
-                <li class="article__list-element">PascalCase</li>
-            </ul><br>
+              <li class="article__list-element">camelCase</li>
+              <li class="article__list-element">kebab-case</li>
+              <li class="article__list-element">snake_case</li>
+              <li class="article__list-element">PascalCase</li>
+            </ul>
+            <br />
             <p class="article__text"><b>CSS II</b></p>
             <ul class="article__list">
-                <li class="article__list-element">tag <strong></strong> podkreśla wysoką istosność i powaność frazy w nim zawartej</li>
-                <li class="article__list-element">tag <em></em> podkreśla, e tekst moze mieć inne znaczenie np. ironia</li>
-                <li class="article__list-element">a - łącza wew./linki zewnętrzne</li>
-                <li class="article__list-element">znacznik nav uywany jest do budowania nawigacji</li>
-                <li class="article__list-element">znacznik img słuy do dodawania zdjęć</li>
-            </ul><br>
+              <li class="article__list-element">
+                tag <strong></strong> podkreśla wysoką istosność i powaność frazy
+                w nim zawartej
+              </li>
+              <li class="article__list-element">
+                tag <em></em> podkreśla, e tekst moze mieć inne znaczenie np.
+                ironia
+              </li>
+              <li class="article__list-element">
+                a - łącza wew./linki zewnętrzne
+              </li>
+              <li class="article__list-element">
+                znacznik nav uywany jest do budowania nawigacji
+              </li>
+              <li class="article__list-element">
+                znacznik img słuy do dodawania zdjęć
+              </li>
+            </ul>
+            <br />
             <p class="article__text"><b>JavaSCript - wprowadzenie</b></p>
-            <p class="article__text">ES6 = ECMASCript 2015 - ustandaryzowany przez orgnizacje ECMA skryptowy jezyk programowania. JS jak kazdy jezyk programowania ma swoja skladnie. Skladowe jezyka JS:</p>
+            <p class="article__text">
+              ES6 = ECMASCript 2015 - ustandaryzowany przez orgnizacje ECMA
+              skryptowy jezyk programowania. JS jak kazdy jezyk programowania ma
+              swoja skladnie. Skladowe jezyka JS:
+            </p>
             <ul class="article__list">
-                <li class="article__list-element">Wartosci - Wartosci dla JS sa tym co liczby dla matematyki.</li>
-                <li class="article__list-element">Operacje porownywania</li>
-                <li class="article__list-element">Literaly (literals)</li>
-                <li class="article__list-element">Zmienne</li>
-                <li class="article__list-element">Funkcje - skladaja sie z nazwy funkcji, nawiasow okraglych, oraz parametrow.</li>
-                li>Obiekty</li>
+              <li class="article__list-element">
+                Wartosci - Wartosci dla JS sa tym co liczby dla matematyki.
+              </li>
+              <li class="article__list-element">Operacje porownywania</li>
+              <li class="article__list-element">Literaly (literals)</li>
+              <li class="article__list-element">Zmienne</li>
+              <li class="article__list-element">
+                Funkcje - skladaja sie z nazwy funkcji, nawiasow okraglych, oraz
+                parametrow.
+              </li>
+              <li>Obiekty</li>
             </ul>
-            <p class="article__text">Skrypty dodajemy do strony na dwa sposoby:</p>
+            <p class="article__text">
+              Skrypty dodajemy do strony na dwa sposoby:
+            </p>
             <ul class="article__list">
-                <li class="article__list-element">bezposrednie pisanie skryptow w znaczniku 'script'</li>
-                <li class="article__list-element">zalaczenie zewnetrznego pliku ze skryptami</li>
+              <li class="article__list-element">
+                bezposrednie pisanie skryptow w znaczniku 'script'
+              </li>
+              <li class="article__list-element">
+                zalaczenie zewnetrznego pliku ze skryptami
+              </li>
             </ul>
-        </article>
-                        
-        </section>
-        
-        </main>
+          </article>
+          <article class="article grid__item">
+            <h3 class="article__title">Tydzien 6. - formularze</h3>
+            <h4>Forms playground</h4>
+            <form method="post" class="form" action="https://dev.cotenfrontend.pl">
+              <p>
+                <label for="firstName">Your name:</label>
+                <input
+                  class="form__item"
+                  id="firstName"
+                  value=""
+                  name="firstName"
+                  type="text"
+                  placeholder="Wpisz swoje imie"
+                />
+              </p>
+              <p>
+                <label for="lastName"
+                  >Your last name:
+                  <input
+                    class="form__item"
+                    required
+                    id="lastName"
+                    name="lastName"
+                    type="text"
+                    placeholder="Wpisz swoje nazwisko"
+                  />
+                </label>
+              </p>
+              <p>
+                <label for="number"
+                  >Your favourt number:
+                  <input
+                    class="form__item"
+                    id="number"
+                    name="number"
+                    type="number"
+                    placeholder="Wpisz swoj ulubiony numer"
+                  />
+                </label>
+              </p>
+              <p>
+                <label for="phone"
+                  >Your phonenumber:
+                  <input
+                    class="form__item"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    type="tel"
+                    placeholder="Wpisz swoj numer telefonu"
+                  />
+                </label>
+              </p>
+              <p>
+                  <label for="email"
+                    >Your email:
+                    <input
+                      class="form__item"
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="Wpisz swoj email"
+                    />
+                  </label>
+              </p>
+              <p>
+                  <label for="password"
+                    >Your password:
+                    <input
+                      class="form__item"
+                      id="password"
+                      name="password"
+                      type="password"
+                      placeholder="Wpisz swoj password"
+                    />
+                  </label>
+              </p>
+              <p>
+                  <label for="file"
+                    >File:
+                    <input
+                      class="form__item"
+                      id="file"
+                      name="file"
+                      type="file"
+                    />
+                  </label>
+              </p>
+              <p>
+                  <label for="band">Pick one band:</label>
+                  <select name="band" id="band">
+                      <option value="band-1">Radiohead</option>
+                      <option value="band-2">Kings Of Leon</option>
+                      <option value="band-3">Linkin Park</option>
+                  </select>
+              </p>
+              <p>
+                  <label for="story">Your story:</label>
+                  <textarea name="story" id="story" cols="30" rows="10">Your story...</textarea>
 
-    <footer class="wrapper">
-        <p>Made by Marcin Bialecki</p>
-    </footer>
+              </p>
+              <p>
+                  <label for="range"
+                    >Range:
+                    <input
+                      class="form__item range--js"
+                      id="email"
+                      name="email"
+                      type="range"
+                      min="0"
+                      max="100"
+                      step="10"
+                    /> <!-- const myRange = document.querySelector('.range--js'); myRange.value  -->
+                  </label>
+              </p>
+              <fieldset>
+                <legend>Address</legend>
+                <p>
+                  <label for="streetName"
+                    >Street name:
+                    <input
+                      class="form__item"
+                      id="streetName"
+                      name="streetName"
+                      type="text"
+                      placeholder="Wpisz swoja nazwe ulicy"
+                    />
+                  </label>
+                </p>
+                <p>
+                  <label for="city"
+                    >City:
+                    <input
+                      class="form__item"
+                      id="city"
+                      name="city"
+                      type="text"
+                      placeholder="Wpisz swoja nazwe miasta"
+                    />
+                  </label>
+                </p>
+                <p>
+                    <label for="postalCode">
+                        Postal code:
+                        <input type="postalCode" name="postalCode" pattern="[0-9]{2}-[0-9]{3}">
+                    </label>
+                </p>
+              </fieldset>
+              <fieldset>
+                <legend>Favourite icecream flavour</legend>
+                <p>
+                  <label for=""
+                    ><input
+                      type="radio"
+                      name="iceCream"
+                      value="Chocolate"
+                    />Chocolate</label
+                  >
+                </p>
+                <p>
+                  <label for=""
+                    ><input
+                      type="radio"
+                      name="iceCream"
+                      value="Lemon"
+                    />Lemon</label
+                  >
+                </p>
+                <p>
+                  <label for=""
+                    ><input
+                      type="radio"
+                      name="iceCream"
+                      value="Strawbery"
+                    />Strawbery</label
+                  >
+                </p>
+              </fieldset>
+              <p>
+                <label for=""
+                  ><input type="checkbox" checked name="zgoda" />I agree</label
+                >
+              </p>
+              <p>
+                <label for=""
+                  ><input type="checkbox" checked name="zgoda" />I agree</label
+                >
+              </p>
+
+              <p>
+                  <input type="submit" value="Send" />
+              </p>
+            </form>
+            <p>W formularzach wysylana jest wartosc parametru Value, a nie to co znajduje sie w opisie danego pola.</p>
+            <p>Parametr Action odbiera wysylke formularza.</p>
+            <p>Istnieja dwie metody wysylania formularzy: GET oraz POST. GET jest domyslny. POST jest bezpieczniejszy bo nie da sie go wywolac przypadkowo.</p>
+            <p>zawsze wysylac formularze z POST, a odbierac dane z GET.</p>
+            <p>enctype= jesli nie dziala nam wysylanie plikow, to musimy go ustawic.</p>
+            <p>Parametr required - formularz nie wyslany bez wymagengo pola. Dodatkowo dla pola email zachodzi walidacja typu tj jesli nie bedzie to email to nie zostanie tez wyslany formularz</p>
+            <p>patterny z wyrazen regularnych tj. pattern="[a-zA-Z0-9]+" zrodlo: https://www.html5pattern.com/names</p>
+            <p>wazne: WALIDACJA PO STRONIE FRONTENDU NIE ZASTEPUJE WALIDACJI PO STRONIE BACKENDU!!</p>
+          </article>
+          <article class="article grid__item">
+            <h3 class="article__title">Tydzien 6. - Buttony/JS</h3>
+            <h4>button vs a</h4>
+            <p>button: interakcja na stronie (np wyslanie formularza, hamburker menu, zmiana w DOM, wykakujace okienko, wszystkie interaktywne rzeczy!), tag a: cala nawigacja: skakanie po stronie, skakanie po sekcjach.</p>
+          </article>
+          <article class="article grid__item">
+            <h3 class="article__title">Tydzien 7. Pseudoklasy</h3>
+            <h4>:first-child / :last-child</h4>
+            <p>Maja zastosowanie gdy wybrany element JEST pierwszym/ostatnim dzieckiem innego elementu!</p>
+            <p>nie ma natomiast zastosowania dla dzieci elementu, ktory posiada te pseudoklasy!</p>
+          </article>
+        </section>
+          
+        <footer class="footer grid__item footer__wrapper-js">
+          <p>Made by Marcin Bialecki</p>
+        </footer>
+    </main>
+
+
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

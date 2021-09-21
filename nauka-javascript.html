@@ -11,28 +11,42 @@
     />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">Strona główna</a>
-        <a href="nauka-html.html">Nauka HTML5</a>
-        <a href="nauka-css.html">Nauka CSS3</a>
-        <a href="nauka-javascript.html">Nauka JavaScript</a>
+    <header class="header">
+      <button class="hamburger hamburger--js" aria-label="Otworz menu">
+        MENU
+      </button>
+      <nav class="navigation navigation--js">
+        <a class="navigation-link" href="index.html">Strona główna</a>
+        <a class="navigation-link" href="nauka-html.html">Nauka HTML5</a>
+        <a class="navigation-link" href="nauka-css.html">Nauka CSS3</a>
+        <a class="navigation-link" href="nauka-javascript.html"
+          >Nauka JavaScript</a
+        >
+        <a class="navigation-link" href="form-playgtound.html"
+          >Form Playground</a
+        >
       </nav>
     </header>
 
-    <main>
+    <main class="main">
       <!-- Hero image -->
-      <header id="home">
-        <div class="layer"></div>
+      <header id="home" class="header__main">
         <div class="inner hero__image js">
-          <h1>Nauka JavaScript (ECMA Script 2016)</h1>
+          <h1 class="main__heading main__heading--js">
+            Nauka JavaScript (ECMA Script 2016)
+          </h1>
+          <span class="main__heading--span"
+            >Notatki ze szkolenia WTF: Co ten frontend!</span
+          >
+        </div>
+        <div>
+          <button class="action--js">Zmien tresc naglowka!</button>
         </div>
       </header>
 
       <!-- Arcitles -->
-      <section class="wrapper" id="articles">
-        <h2>Notatki ze szkolenia WTF: Co ten frontend!</h2>
-        <article class="border">
+      <section class="articles grid" id="articles">
+        <article class="article border">
           <strong>Zmienne w JS</strong>
           <p>// const - zmienne majace stale polaczenie z jedna wartoscia</p>
           <p>const name = 'Marcin§;</p>
@@ -67,11 +81,143 @@
             To to zmieniamy to PLACZENIA MIEDZY NIMI, A ZMIENNYMI!
           </p>
         </article>
+        <article class="article border">
+          <h3 class="article__title">DOM - Document Object Model</h3>
+          <p class="article__text article__text--js"></p>
+          <p class="article__text">
+            DOM to jest wynikowy/zlozony kod HTML po wszystkich
+            przeksztalceniach z JS widoczny w Dev Tools w przegladarce. DOM nie
+            jest ani w zrodle strony, ani w plikach HTML. Tylko i wylacznie ta
+            forma jest analizowana przez przegladarke.
+          </p>
+          <p class="article__text">
+            wybieranie elementu:<br />
+            document.querySelector('.selector') = $('.selector').<br />
+            funkcja querySelector zwraca node (wezel) z HTMLa, selektor jest
+            zapisywany zgodnie z CSS.
+          </p>
+          <p class="article__text">
+            Obiekt <em>document</em> posiada rozne metody dostepne po kropce,
+            np. <em>innnerHTML </em>
+          </p>
+          <p class="article_text">
+            nazwaZmiennejQuerySelector.innerHTML = 'tresc'
+          </p>
+          <p class="article_text">
+            Korzystajac z BEM tworzymy dodatkowa klase z modyfikatorem --js co
+            ulatwia identyfikacje
+          </p>
+        </article>
+        <article class="article border">
+          <h3 class="article__title">Funkcje w JS</h3>
+          <ul class="article__list">
+            <li class="article__list-element">
+              Jesli funkcja nie ma Return, to zwracany jest Undefined (funkcja
+              zawsze cos zwraca!), ale wszystkie dzialania wewnatrz funkcji sie
+              wykonuja.
+            </li>
+            <li class="article__list-element">
+              Funksje piszemy po to, aby wywolac jakis fragment kodu kilka razy
+              (DRY).
+            </li>
+            <li class="article__list-element">
+              Funkcje przyjmuja parametry, ale nie zawsze.
+            </li>
+            <li class="article__list-element">
+              Funkcje ulatwiaja przeszukiwanie kodu, poprawiaja czytelnosc kodu
+              (poprawianie tylko w jednym miejscu), odpowiedzialnosc za
+              wykonanie zadania tylko w jednym miejscu
+            </li>
+          </ul>
+          <h3 class="article__title">JS: Obiekt</h3>
+          <ul class="article__list">
+            <li class="article__list-element">
+              Nasz swiat jest obiektowy. Prymitywne typy danych zachowuja sie
+              rowniez jak obiektowe.
+            </li>
+            <li class="article__list-element">
+              Obiekt sklada sie z par Klucz: Wartosc (key: value). Klucz musi
+              byc unikalny w ramach obiektu, wartosci to: prymitywy, funkcje,
+              zagniezdzenia.
+            </li>
+            <li class="article__list-element">
+              W obiekcie zmienne nazywamy wlasnosciami (property), a funkcje to
+              metody. Obiekt to const/let
+            </li>
+            <li class="article__list-element">'.' dot notation -</li>
+          </ul>
+        </article>
+        <article class="article border">
+          <h3 class="article__title">Logika w JS</h3>
+          <p>Operatory porownania:</p>
+          <p>Falsy - 6 wartosci zawsze zwracajacych false:</p>
+          <ul>
+            <li>false</li>
+            <li>0</li>
+            <li>'',"", - pusty string</li>
+            <li>null</li>
+            <li>undefined</li>
+            <li>NaN - not a number</li>
+          </ul>
+          <p>Truthy - zawsze zwracaja true</p>
+          <ul>
+            <p>cala reszta:) tj:</p>
+            <li>'tekst'</li>
+            <li>12</li>
+            <li>[]</li>
+            <li>{}</li>
+            <li>true</li>
+          </ul>
+          <p>A kiedy trzeba uzyc kilka warunkow...</p>
+          <p>&& - operator and - oba warunki/zdania musz abyc prawdziwe</p>
+          <p>|| - operator lub - co najmniej jeden musi byc true</p>
+          <p>! - operator not - odwraca wartosc wyrazenia logicznego</p>
+          <p>if - wykona sie blok kodu, jesli zdanie jest prawdziwe</p>
+          <p>
+            else - wykona sie dla zdania nieprawdziwego np if (..) {..} else
+            {..}
+          </p>
+          <p>
+            else if - zdefiniowany else tj. pozwala na dodanie kolejnego
+            przypadku
+          </p>
+          <p>konstrukcja switch - przechodzi po zdefiniowanych przypadkach</p>
+          <p>zapis skrocony</p>
+          <p>element.addEventListener('click', (e) => { .. });</p>
+        </article>
+        <article class="article border">
+          <h3 class="article__title">Dodawanie i odejmowanie klas w JS</h3>
+          <p>
+            dodawanie klas: element.classList.(add, remove, toggle, contains) -
+            tutaj dodajemy sama nazwe klasy, bez kropki!
+          </p>
+          <p></p>
+        </article>
+        <article class="article border">
+          <h3 class="article__title">Node.js</h3>
+          <p>
+            package.json - zawiera wszystkie paczki konieczne do zbudowania
+            strony
+          </p>
+          <p>
+            npm install - szuka w dependencies w package.json jakie paczki sa
+            niezbedne do zbudowania strony i je instaluje.
+          </p>
+          <p>npx - odpalanie skryptu bezposredni w konsoli</p>
+          <p>dodawanie skryptow:<br>
+            "scripts": {<br>
+            "cow": "cowsay -w hello world",<br>
+            "start": "node script.js"<br>
+          uruchamianie skryptow: npm run (name_of_the_script)</p>
+          
+        </article>
       </section>
     </main>
 
-    <footer class="wrapper">
+    <footer class="wrapper footer__wrapper-js">
       <p>Made by Marcin Bialecki</p>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>

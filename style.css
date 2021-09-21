@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #fefefe;
   padding: 0;
@@ -14,95 +21,169 @@ h2 {
   padding: 50px 0;
 }
 
-#home {
-  position: relative;
-}
-.layer {
-  background-color: rgba(0, 0, 0, .5);
-  width: 100%;
-  min-height: 350px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.hero__image {
-  background-position: center;
-  min-height: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero__image.index {
-  background: url("https://images.pexels.com/photos/574069/pexels-photo-574069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") fixed no-repeat 0/cover;
-}
-
-.hero__image.html {
-  background: url("img/html.jpg") fixed no-repeat 0/cover;
-}
-
-.hero__image.css {
-  background: url("img/css.jpg") fixed no-repeat 0/cover;
-}
-
-.hero__image.js {
-  background: url("img/javascript.jpg") fixed no-repeat 0/cover;
-}
-
-.hero__image h1 {
- z-index: 999;
- color: #fefefe;
+.main__heading {
+ color: #000;
  font-weight: 700;
  font-size: 2.5rem;
+ display: block;
 }
 
-.intro {
-  text-align: center;
-  padding: 40px 0;
+.main__heading::before, .main__heading::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
 }
 
-.wrapper {
-  max-width: 900px;
-  margin: 0 auto;
+.main__heading--span {
+  display: block;
+  color: #000;
 }
 
-.border {
-  position: relative;
-  border-left: 2px solid #3c3c3c;
-  border-right: 2px solid #3c3c3c;
-  border-bottom: 2px solid #3c3c3c;
-  padding: 60px;
-  margin-bottom: 40px;
+.main {
+  margin-top: 60px;
+  background-color: #A9C9FF;
+  background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+  display: grid;
+  grid-template-areas:"header header"
+  "articles articles"
+  "footer footer";
+  grid-template-columns: 1fr;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
+.header__main {
+  grid-area: header;
+}
+
+.articles {
+  grid-area: articles;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.grid__item {
+  padding: 20px;
+  background-color: tomato;
 }
 
 article h3 {
   text-transform: uppercase;
-  position: absolute;
-  width: 50%;
-  left: 45%;
-  top: -30px;
 }
-
-.border::before {
-  content: " ";
-  border-top: 2px solid #3c3c3c;
-  width: 25%;
-  position: absolute;
+.header {
+  background: #fff;
+  min-height: 50px;
+  position: fixed;
   top: 0;
-  left: 0;
+  width: 100%;
 }
 
-.border::after {
-  content: " ";
-  border-top: 2px solid #3c3c3c;
-  width: 25%;
+/* NAVIGATION */
+
+.navigation {
+  padding: 16px;
+  display: none;
+}
+
+.navigation-link {
+  margin: 0 0 20px 0;
+  display: block;
+}
+
+.navigation-link:hover {
+  color: aquamarine;
+}
+
+.navigation-link:focus {
+  border: 3px solid aquamarine;
+}
+
+.navigation-link::before {
+  content: '-> ';
+}
+
+.navigation--open {
+  display: block;
+}
+
+.navigation.navigation--js.navigation--open {
+  z-index: 100000;
+}
+
+.article__title {
+  text-decoration: underline;
+}
+
+.table {
+  width: 100%;
+}
+
+.form {
+}
+
+.form__item {
+  display: block;
+  width: 100%;
+}
+
+.form label {
+  display: block;
+}
+
+.form textarea {
+  width: 100%;
+}
+
+.form__item:focus {
+  background: yellow;
+}
+
+.grid__item:first-child, .grid__item:last-child {
+  background: yellow;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background: none;
 }
 
-.main {
-  max-width: 1000px;
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .navigation {
+    padding: 16px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+  }
+
+  .navigation-link::before {
+    content: '';
+  }
+
+  .main, .articles {
+    grid-template-columns: 1fr 1fr;
+  }
+  .header {
+    background: #ccc;
+  }
+}
+
+.klasa-z-js {
+  background-color: yellow;
 }

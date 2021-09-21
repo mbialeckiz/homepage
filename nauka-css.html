@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moja strona z kursu Cotenfrontend!</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="nauka-html.html">Nauka HTML5</a>
-            <a href="nauka-css.html">Nauka CSS3</a>
-            <a href="nauka-javascript.html">Nauka JavaScript</a>
-        </nav>
+      <button class="hamburger hamburger--js" aria-label="Otworz menu">
+        MENU
+      </button>
+      <nav class="navigation navigation--js">
+        <a class="navigation-link" href="index.html">Strona główna</a>
+        <a class="navigation-link" href="nauka-html.html">Nauka HTML5</a>
+        <a class="navigation-link" href="nauka-css.html">Nauka CSS3</a>
+        <a class="navigation-link" href="nauka-javascript.html"
+          >Nauka JavaScript</a
+        >
+        <a class="navigation-link" href="form-playgtound.html"
+          >Form Playground</a
+        >
+      </nav>
     </header>
 
-    <main>
-    <!-- Hero image -->
-    <header id="home">
-        <div class="layer"></div>
+    <main class="main">
+      <!-- Hero image -->
+      <header id="home" class="header__main">
         <div class="inner hero__image css">
-            <h1>Nauka CSS3</h1>
+          <h1 class="main__heading">Nauka CSS3</h1>
+          <span class="main__heading--span"
+            >Notatki ze szkolenia WTF: Co ten frontend!</span
+          >
         </div>
-    </header>
+      </header>
 
-    <!-- Arcitles -->
-    <section class="wrapper" id="articles">
-        <h2>Notatki ze szkolenia WTF: Co ten frontend!</h2>
-            <article class="border">
-                <h3>Tydzien 4.</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate labore reiciendis pariatur repudiandae quae vel voluptas id autem ad perspiciatis, quaerat modi dolorum dolor placeat alias voluptatibus amet hic quo.</p>
-            </article>            
-    </section>
-    
+      <!-- Arcitles -->
+      <section class="articles grid" id="articles">
+        <article class="border">
+          <h3>Tydzien 7. SASS/SCSS</h3>
+          <p>Piszac SASS/SCSS nigdy nie edytujemy wynikowych plikow .CSS!</p>
+          <p></p>
+        </article>
+      </section>
+      <footer class="wrapper">
+        <p>Made by Marcin Bialecki</p>
+      </footer>
     </main>
 
-    <footer class="wrapper">
-        <p>Made by Marcin Bialecki</p>
-    </footer>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>

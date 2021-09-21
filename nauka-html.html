@@ -9,36 +9,81 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="nauka-html.html">Nauka HTML5</a>
-            <a href="nauka-css.html">Nauka CSS3</a>
-            <a href="nauka-javascript.html">Nauka JavaScript</a>
+        <button class="hamburger hamburger--js" aria-label="Otworz menu">MENU</button>
+      <nav class="navigation navigation--js">
+            <a class="navigation-link" href="index.html">Strona główna</a>
+            <a class="navigation-link" href="nauka-html.html">Nauka HTML5</a>
+            <a class="navigation-link" href="nauka-css.html">Nauka CSS3</a>
+            <a class="navigation-link" href="nauka-javascript.html">Nauka JavaScript</a>
+            <a class="navigation-link" href="form-playgtound.html"
+          >Form Playground</a>
         </nav>
     </header>
 
-    <main>
+    <main class="main">
     <!-- Hero image -->
-    <header id="home">
-        <div class="layer"></div>
+    <header id="home" class="header__main">
         <div class="inner hero__image html">
-            <h1>Nauka HTML5</h1>
+            <h1 class="main__heading">Nauka HTML5</h1>
+            <span class="main__heading--span">Notatki ze szkolenia WTF: Co ten frontend!</span>
         </div>
+        <div class="layer"></div>
     </header>
 
     <!-- Arcitles -->
-    <section class="wrapper" id="articles">
+    <section class="articles grid" id="articles">
         <h2>Notatki ze szkolenia WTF: Co ten frontend!</h2>
-            <article class="border">
-                <h3>Tydzien 4.</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate labore reiciendis pariatur repudiandae quae vel voluptas id autem ad perspiciatis, quaerat modi dolorum dolor placeat alias voluptatibus amet hic quo.</p>
+        <article class="border article">
+                <h3>Tydzien 5.</h3>
+                <h4>Lista znacznikow</h4>
+                <ol>
+                    <li>OL</li>
+                    <li>UL</li>
+                    <li>section
+                        <ul>
+                            <li>jeden</li>
+                            <li>dwa</li>
+                        </ul>
+                    </li>
+                </ol>
+                <dl>
+                    <dt>div</dt>
+                    <dd>opis mojego diva</dd>
+                    <dt>section</dt>
+                    <dd>opis mojej sekcji</dd>
+                </dl>
+                <h4>Tabele</h4>
+                <table class="table">
+                    <caption>Opis tabeli</caption>
+                    <thead>
+                        <tr>lp</tr>
+                        <tr>tytul</tr>
+                        <tr>czas trwania</tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>Powitanie</td>
+                            <td>3:21</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>tytul 2</td>
+                            <td>czas trwania!</td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </article>            
-    </section>
-    
+        </section>
+        <footer class="wrapper footer">
+            <p>Made by Marcin Bialecki</p>
+        </footer>
     </main>
 
-    <footer class="wrapper">
-        <p>Made by Marcin Bialecki</p>
-    </footer>
+    
+
+    <script src="main.js"></script>
+
 </body>
 </html>
